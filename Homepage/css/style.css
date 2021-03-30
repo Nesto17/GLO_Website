@@ -1,0 +1,635 @@
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--white);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 580px;
+}
+
+.hero {
+    position: relative;
+    padding: 0px 50px;
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero::before {
+    position: absolute;
+    content: "";
+    background: -moz-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* FF3.6+ */
+    background: -webkit-gradient(25deg, #4857ddff, #3D95CEff, #F72E09ff, #FFE982ff); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(25deg, #4857ddff, #3D95CEff, #F72E09ff, #FFE982ff); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* Opera 11.10+ */
+    background: -ms-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* IE10+ */
+    background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982);
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: 0;
+
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* animation: bgAnimate 30s infinite; */
+}
+
+@keyframes bgAnimate {
+    0% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+.hero_title {
+    font-family: 'Calistoga';
+    font-size: 45px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-align: left;
+    margin-bottom: 40px;
+
+    z-index: 1;
+}
+
+.hero_subtitle {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 24px;
+
+    z-index: 1;
+}
+
+.hero_directory {
+    display: none;
+}
+
+.project {
+    padding: 0px 30px;
+    min-height: 630px;
+
+    background: url('../images/Interact-Background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -550px;
+    box-shadow: inset 0px 0px 30px #00000050;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.project_logo {
+    width: 85%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px #00000030;
+
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+}  
+
+.project_logo img {
+    width: 100%;
+}
+
+.project_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project_title {
+    margin-top: 35px;
+
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Calistoga';
+    white-space: pre-line;
+}
+
+.project_desc {
+    margin-top: 20px;
+    padding-right: 60px;
+
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.project_button {
+    margin-top: 30px;
+    background: var(--black);
+    padding: 10px 35px;
+    border-radius: 25px;
+    cursor: pointer;
+    /* box-shadow: 0px 0px 15px var(--fade_black); */
+
+    transition: transform 0.4s, box-shadow 0.4s;
+
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project_button:hover {
+    transform: translateY(-10%);
+    box-shadow: 0px 0px 15px var(--fade_black);
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview_box {
+    width: 80%;
+    min-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--fade_black);
+    padding: 0px 30px;
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preview_logo {
+    background: var(--fade_white2);
+    width: 75%;
+    height: 60px;
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 0.7px solid #ffffff20;
+    box-shadow: 0px 0px 20px #00000010;
+
+    margin-top: -25px;
+
+    display: grid;
+    place-items: center;
+}
+
+.preview_title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+
+    align-self: flex-start;
+}
+
+.preview_desc {
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 17px;
+
+    align-self: flex-start;
+}
+
+.preview_desc a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.preview_button {
+    align-self: flex-start;
+    background: var(--white);
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px #ffffff40;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.preview_button:hover {
+    transform: translateY(-7px);
+}
+
+.preview_image {
+    width: 100%;
+    margin-bottom: -80px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px var(--fade_black);
+    overflow: hidden;
+
+    display: grid;
+    place-items: center;
+}
+
+.preview_image img {
+    width: 100%;
+}
+
+.zoom .preview_box {
+    background: var(--zoom);
+}
+.zoom .preview_button {
+    color: var(--zoom);
+}
+.zoom .preview_logo img {
+    width: 60%;
+}
+
+.doordash .preview_box {
+    background: var(--doordash);
+}
+.doordash .preview_button {
+    color: var(--doordash);
+}
+.doordash .preview_logo img {
+    width: 75%;
+}
+
+.uber .preview_box {
+    background: var(--uber);
+}
+.uber .preview_button {
+    color: var(--uber);
+}
+.uber .preview_logo img {
+    width: 50%;
+}
+
+.venmo .preview_box {
+    background: var(--venmo);
+}
+.venmo .preview_button {
+    color: var(--venmo);
+}
+.venmo .preview_logo img {
+    width: 60%;
+}
+
+@media (min-width: 550px) {
+    section {
+        min-height: 760px;
+    }
+
+    .hero {
+        padding: 0px 100px;
+    }
+    .hero_title {
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .project {
+        padding: 0px 50px;
+        min-height: 900px;
+    }
+    .project_logo {
+        width: 80%;
+    }
+    .project_title {
+        font-size: 34px;
+    }
+    .project_desc {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .project_button {
+        font-size: 16px;
+    }
+
+    .preview_box {
+        min-height: 440px;
+        width: 75%;
+        padding: 0px 50px;
+
+        display: grid;
+        justify-items: flex-start;
+        grid-row-gap: 20px;
+    }
+    .preview_logo {
+        width: 65%;
+        height: 80px;
+        margin: -50px 0 5px;
+        justify-self: center;
+    }
+    .preview_title {
+        font-size: 22px;
+        font-weight: 700;
+        /* margin: 5px 0; */
+    }
+    .preview_desc {
+        font-size: 12px;
+        line-height: 24px;
+        /* margin: 5px 0;  */
+    }
+    .preview_button {
+        padding: 10px 25px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        /* margin: 5px 0; */
+    }
+    .preview_image {
+        margin: 5px 0 -100px;
+        justify-self: center;
+    }
+
+    .zoom .preview_logo img {
+        width: 50%;
+    }
+    .uber .preview_logo img {
+        width: 40%;
+    }
+    .venmo .preview_logo img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1025px) {
+    section {
+        min-height: unset;
+        height: 600px;
+    }
+
+    .hero {
+        align-items: center;
+    }
+
+    .hero::before {
+        width: 950px;
+        height: 750px;
+        filter: blur(100px);
+        top: -200px;
+        left: 50%;
+    }
+
+    .hero_subtitle {
+        margin-bottom: 180px;
+        white-space: pre-line;
+    }
+
+    .hero_directory {
+        position: absolute;
+        bottom: 20%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        z-index: 1;
+    }
+
+    .hero_directory_title {
+        color: var(--black);
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .hero_directory_box {
+        position: relative;
+        min-width: 100px;
+        height: 80px;
+        background: var(--fade_white1);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 0px 20px;
+        border: 1px solid #ffffff20;
+        box-shadow: 0px 0px 10px #00000030;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hero_directory_item {
+        color: var(--white);
+        font-weight: 500;
+
+        padding: 10px 15px;
+        width: 130px;
+        margin: 0 10px;
+        background: var(--black);
+        border-radius: 5px;
+
+        transition: transform 0.3s, box-shadow 0.5s;
+
+        display: grid;
+        place-items: center;
+    }
+
+    .hero_directory_item:hover {
+        transform: translateY(-25%);
+    }
+
+    .hero_directory_zoom {
+        background: var(--zoom);
+    }
+    .hero_directory_doordash {
+        background: var(--doordash);
+    }
+    .hero_directory_uber {
+        background: var(--uber);
+    }
+    .hero_directory_venmo {
+        background: var(--venmo);
+    }
+    .hero_directory_zoom:hover {
+        box-shadow: 0px 0px 30px var(--zoom_glow);
+    }
+    .hero_directory_doordash:hover {
+        box-shadow: 0px 0px 30px var(--doordash_glow);
+    }
+    .hero_directory_uber:hover {
+        box-shadow: 0px 0px 30px var(--uber_glow);
+    }
+    .hero_directory_venmo:hover {        
+        box-shadow: 0px 0px 30px var(--venmo_glow);
+    }
+    
+    .project {
+        flex-direction: row;
+        align-items: center;
+        min-height: 700px;
+
+        background-position: unset;
+    }
+    .project_content {
+        width: 50%;
+    }
+    .project_logo {
+        width: 50%;
+        order: 2;
+    }
+    .project_title {
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .project_desc {
+        font-size: 14px;
+        font-weight: 450;
+    }
+    .project_button {
+        font-size: 16px;
+        padding: 13px 35px;
+    }
+
+    .preview {
+        width: 100vw;
+    }
+    .preview_box {
+        position: relative;
+        min-height: unset;
+        width: 75%;
+        height: 440px;
+        border-radius: 0;
+        box-shadow: none;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        grid-row-gap: unset;
+    }
+    .preview_logo {
+        position: absolute;
+        width: 270px;
+        height: 80px;
+        backdrop-filter: blur(7px);
+        border-radius: 14px;
+    }
+    .preview_title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .preview_desc {
+        font-size: 12px;
+        margin: 30px 0 0;
+    }
+    .preview_button {
+        font-size: 14px;
+        padding: 10px 25px;
+        margin: 40px 0 0;
+    }
+    .preview_image {
+        position: absolute;
+        width: 480px;
+        border-radius: 10px;
+    }
+    
+    .zoom .preview_box {
+        background: url('../images/zoom-container2.png');
+        background-size: 100% 440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 40px 45% 0px 50px;
+        margin-top: 120px;
+        /* filter: drop-shadow(0px 0px 20px #4856DD60); */
+    }
+    .zoom .preview_logo {
+        right: 10%;
+        top: 3%;
+    }
+    .zoom .preview_image {
+        right: -6%;
+        bottom: 32%;
+    }
+
+    .doordash .preview_box {
+        background: url('../images/doordash-container2.png');
+        background-size: 100% 440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 40px 50px 0px 45% ;
+        margin-top: 100px;
+    }
+    .doordash .preview_logo {
+        left: 10%;
+        bottom: 15%;
+    }
+    .doordash .preview_image {
+        left: 4%;
+        top: -2%;
+    }
+
+    .uber .preview_box {
+        background: url('../images/uber-container2.png');
+        background-size: 100% 440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 60px 45% 0px 50px ;
+        margin-top: 90px;
+    }
+    .uber .preview_logo {
+        right: 10%;
+        top: 20%;
+    }
+    .uber .preview_image {
+        right: 4%;
+        bottom: 25%;
+    }
+
+    .venmo .preview_box {
+        background: url('../images/venmo-container2.png');
+        background-size: 100% 440px;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 70px 50px 0px 45% ;
+        margin-top: 60px;
+    }
+    .venmo .preview_logo {
+        left: 10%;
+        bottom: -2%;
+    }
+    .venmo .preview_image {
+        left: 4%;
+        top: 10%;
+    }
+}
+
+@media (min-width: 1140px) {
+    .zoom .preview_box {
+        padding: 60px 45% 0px 50px;
+    }
+
+    .zoom .preview_image {
+        right: 3%;
+        bottom: 32%;
+    }
+}

@@ -1,0 +1,166 @@
+@media (min-width: 550px) {
+  .hero {
+    row-gap: 20px;
+    padding: 100px 60px 0;
+    min-height: 450px;
+  }
+
+  .hero_title {
+    font-size: 60px;
+  }
+
+  .hero_subtitle {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .members {
+    height: 690px;
+  }
+
+  .member_title {
+    font-size: 22px;
+    white-space: nowrap;
+
+    min-width: unset;
+    max-width: unset;
+    min-height: 60px;
+    padding: 5px 30px;
+    margin: 0px 0px -15px 10%;
+
+    align-self: flex-start;
+  }
+
+  .member_picture_box {
+    align-self: flex-start;
+    width: 380px;
+    height: 460px;
+    margin-left: 20%;
+  }
+
+  #reehab {
+    background-position: -140px 0;
+  }
+
+  #febrian {
+    background-position: -200px 0;
+  }
+
+  .member_name {
+    font-size: 38px;
+    font-weight: 550;
+
+    padding: 15px 25px;
+
+    align-self: flex-end;
+    margin: -20px 5% 0 0;
+  }
+
+  .member_socials {
+    max-width: 200px;
+    min-height: 50px;
+    margin: -5px 10% 0 0;
+    padding: 0px 35px;
+
+    align-self: flex-end;
+  }
+
+  .member_socials a i {
+    font-size: 26px;
+  }
+
+  .member_socials div {
+    width: 24px;
+    height: 24px;
+  }
+
+  #next-btn,
+  #prev-btn {
+    width: 65px;
+    height: 65px;
+
+    font-size: 30px;
+  }
+
+  #next-btn {
+    right: 25px;
+  }
+
+  #prev-btn {
+    left: 25px;
+  }
+}
+
+@media (min-width: 1025px) and (orientation: landscape) {
+  .hero {
+    align-items: flex-start;
+  }
+
+  .hero_subtitle {
+    margin-bottom: 100px;
+    text-align: left;
+    white-space: pre-line;
+  }
+
+  .members {
+    height: 650px;
+  }
+
+  .members_container {
+    width: 75vw;
+  }
+
+  .member_section {
+    width: 75vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.6fr 0.5fr 0.5fr;
+    justify-items: flex-start;
+  }
+
+  .member_title {
+    font-size: 24px;
+    margin: 0 0 -10px -120px;
+    padding: 8px 45px;
+
+    align-self: flex-start;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .member_picture_box {
+    width: 360px;
+    height: 420px;
+    margin: 0;
+
+    align-self: center;
+    justify-self: center;
+    grid-row: 1/4;
+    grid-column: 1/2;
+  }
+
+  .member_name {
+    text-align: left;
+    font-size: 46px;
+    padding: 20px 35px;
+    margin: 0;
+    white-space: pre-line;
+
+    align-self: flex-start;
+    grid-row: 2/3;
+    grid-column: 2/3;
+  }
+
+  .member_socials {
+    z-index: 2;
+    box-shadow: 0px 0px 15px #00000040;
+    margin: -6px -50px 0 0;
+
+    align-self: flex-start;
+    justify-self: center;
+    grid-row: 3/4;
+    grid-column: 2/3;
+  }
+}

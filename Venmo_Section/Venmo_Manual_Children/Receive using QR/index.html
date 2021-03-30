@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/essentials.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Venmo Manual | Interact!</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="navigation">
+            <div class="navigation_logo"><img src="./images/GLO_logo.png" alt="GLO GlobalLeadershipOrganization"></div>
+            <div class="navigation_trigger">
+                <i class="fas fa-bars"></i>
+                <p>menu</p>
+            </div>
+            <div class="navigation_panel">
+                <div class="navigation_background"></div>
+                <div class="navigation_box">
+                    <a href='#' class="navigation_item navigation_home">
+                        <div class="navigation_icon"><i class="fas fa-home"></i></div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Home</h4>
+                        </div>
+                    </a>
+                    <div class="navigation_item navigation_manuals active">
+                        <div class="navigation_helper">
+                            <div class="navigation_icon"><i class="fas fa-photo-video"></i></div>
+                            <div class="navigation_bar"></div>
+                        </div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Manuals<i class="fas fa-caret-down"></i></h4>
+                            <div class="navigation_breakline"></div>
+                            <div class="navigation_manuals_list">
+                                <a href="#" class="navigation_manuals_item">Zoom</a>
+                                <a href="#" class="navigation_manuals_item">Doordash</a>
+                                <a href="#" class="navigation_manuals_item">Uber</a>
+                                <a href="#" class="navigation_manuals_item active">Venmo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href='#' class="navigation_item navigation_teams">
+                        <div class="navigation_icon"><i class="fas fa-users"></i></div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Teams</h4>
+                        </div>
+                    </a>
+                    <a href='#' class="navigation_item navigation_contact">
+                        <div class="navigation_icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Contact</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <h2 class="hero_title">How to Use QR Code to Receive Money</h2>
+        </section>
+
+        <section class="manual_video">
+            <hr class="line" id="line">
+            <h2 class="manual_video_title">Video Manual</h2>
+            <p class="manual_video_text">
+                Learn through our comprehensive and quick video explanation!
+            </p>
+            <div class="manual_video_yt_container">
+                <iframe src="https://www.youtube.com/embed/J9FD_zj3N9o" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen class="manual_video_youtube"></iframe>
+            </div>
+            <hr>
+        </section>
+
+        <section class="manual_tutor">
+            <h2 class="manual_tutor_title">Written and Photo Manuals</h2>
+            <p class="manual_tutor_text">
+                Learn by reading through our detail-oriented and carefully
+                curated written and photo manuals.
+            </p>
+
+            <h2 class="manual_tutor_steps"><span>1.</span> Open the Venmo app & tap the <strong>Scan</strong> button at the bottom of your screen.</h2>
+            <img src="./images/venmo_pictures/1.jpg" class="manual_tutor_steps_image">
+
+            <h2 class="manual_tutor_steps"><span>2.</span> Select <strong>Venmo me</strong> on the toolbar above. Your personal <strong>QR code</strong> should appear.</h2>
+            <img src="./images/venmo_pictures/2.jpg" class="manual_tutor_steps_image">
+
+            <h2 class="manual_tutor_steps"><span>3.</span> Have the person sending you money scan your <strong>QR code</strong> with their phone.</h2>
+            <h2 class="manual_tutor_steps"><span>4.</span> The 3 options below allows you to share your personal QR code via <strong>Print, Email, and Text</strong> respectively.</h2>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_logos">
+                <div class="footer_logo footer_glo_logo"><img src="./images/GLO_logo.png" alt=""></div>
+                <div class="footer_logo footer_interact_logo"><img src="./images/Interact_logo.png" alt=""></div>
+            </div>
+            <p class="footer_desc">Interact is a project created to bring equality by ensuring
+                that people of all ages can benefit from technology
+            </p>
+            <div class="footer_bar"></div>
+            <div class="footer_socials">
+                <a target="_blank" href="https://www.instagram.com/interactproject/"
+                    class="footer_social_container"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCSQbOJyrZoW65V3DtWoZdBQ"
+                    class="footer_social_container"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./animate.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+
+        history.scrollRestoration = "manual";
+
+        $(window).on('beforeunload', function () {
+            $(window).scrollTop(0);
+            $(body).hide();
+        });
+    </script>
+</body>
+
+</html>

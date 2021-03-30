@@ -1,0 +1,43 @@
+/* CALISTOGA FONT */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&display=swap');
+
+/* INTER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --white: #F7F4EF;
+    --chartreuse: #E2FA18;
+    --yellow: #FFE982;
+    --black: #212121;
+    --blue: #4856DD;
+
+    --zoom: #4856DD;
+    --doordash: #F72E09;
+    --uber: #2B383D;
+    --venmo: #3D95CE;
+    
+    --zoom_secondary: #818CFF;
+    --doordash_secondary: #FFA843;
+    --uber_secondary: #607466;
+    --venmo_secondary: #0A1C60;
+
+    --gradient_main: linear-gradient(45deg, #4856DD, #F72E09);
+
+    --fade_white1: rgba(225,225,225,0.3);
+    --fade_white2: rgba(255,255,255,0.6);
+    --fade_black: rgba(0,0,0,0.5);
+
+    /* FONT SIZES */
+    --small: 12px;
+    --medium: 14px
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}

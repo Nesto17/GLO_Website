@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/essentials.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Contact | Interact!</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="navigation">
+            <div class="navigation_logo"><img src="./images/GLO_logo.png" alt="GLO GlobalLeadershipOrganization"></div>
+            <div class="navigation_trigger">
+                <i class="fas fa-bars"></i>
+                <p>menu</p>
+            </div>
+            <div class="navigation_panel">
+                <div class="navigation_background"></div>
+                <div class="navigation_box">
+                    <a href='#' class="navigation_item navigation_home">
+                        <div class="navigation_icon"><i class="fas fa-home"></i></div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Home</h4>
+                        </div>
+                    </a>
+                    <div class="navigation_item navigation_manuals">
+                        <div class="navigation_helper">
+                            <div class="navigation_icon"><i class="fas fa-photo-video"></i></div>
+                            <div class="navigation_bar"></div>
+                        </div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Manuals<i class="fas fa-caret-down"></i></h4>
+                            <div class="navigation_breakline"></div>
+                            <div class="navigation_manuals_list">
+                                <a href="#" class="navigation_manuals_item">Zoom</a>
+                                <a href="#" class="navigation_manuals_item">Doordash</a>
+                                <a href="#" class="navigation_manuals_item">Uber</a>
+                                <a href="#" class="navigation_manuals_item">Venmo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href='#' class="navigation_item navigation_teams">
+                        <div class="navigation_icon"><i class="fas fa-users"></i></div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Teams</h4>
+                        </div>
+                    </a>
+                    <a href='#' class="navigation_item navigation_contact active">
+                        <div class="navigation_icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <div class="navigation_text">
+                            <h4 class="navigation_title">Contact</h4>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="text">
+                <h2 class="text_title">Contact Us!</h2>
+                <h4 class="text_subtitle">Whether you want to appreciate what we have done or just to 
+                    file in some complaints, we are always ready </h4>
+            </div>
+            <form action="#" class="form_box" autocomplete="off">
+                <div class="form_section">
+                    <input type="text" name="fullname" id="fullname" class="form_input form_name" placeholder="First Last">
+                    <label class="form_label" for="fullname">
+                        <span class="form_prompt_hidden">please tell us your name</span>
+                        <span class="form_prompt">full name</span>
+                    </label>
+                </div>
+                <div class="form_section">
+                    <input type="email" name="email" id="email" class="form_input form_email" placeholder="email@address.com">
+                    <label class="form_label" for="fullname">
+                        <span class="form_prompt_hidden">please enter your email address</span>
+                        <span class="form_prompt">email</span>
+                    </label>
+                </div>
+                <div class="form_section">
+                    <textarea class="form_input form_messages" name="messages" id="messages" placeholder="max. 250 characters" maxlength="250" data-gramm_editor="false" ></textarea>
+                    <label class="form_label" for="fullname">
+                        <span class="form_prompt_hidden">please tell us your thoughts</span>
+                        <span class="form_prompt">messages</span>
+                    </label>
+                </div>
+                <!-- <div class="form_file">
+                    <span class="form_prompt">Additional Files</span>
+                    <div class="form_file_box">
+                        <input type="file" name="file" id="file" class="form_file_input">
+                        <ul class="form_file_thumbs">
+
+                        </ul>
+                        <div class="form_file_button" >+</div>
+                    </div>
+                </div> -->
+                <button class="form_submit" type="submit">submit </button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer_logos">
+                <div class="footer_logo footer_glo_logo"><img src="./images/GLO_logo.png" alt=""></div>
+                <div class="footer_logo footer_interact_logo"><img src="./images/Interact_logo.png" alt=""></div>
+            </div>
+            <p class="footer_desc">To bring equality by ensuring that people of all ages can benefit from technology</p>
+            <div class="footer_socials">
+                <a href="https://www.instagram.com/interactproject/" class="footer_social_container"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="footer_social_container"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
