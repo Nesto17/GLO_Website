@@ -6,10 +6,7 @@ const navBox = document.querySelector('.navigation_box');
 const navDropDown = document.querySelector('.navigation_manuals');
 const navManualsList = document.querySelector('.navigation_manuals_list');
 const wrapper = document.querySelector('.wrapper');
-const manual_items = document.querySelectorAll('.manual_items');
-const screen_resolution = window.matchMedia("(max-width: 1023px)");
-const hero_subtitle = document.querySelector(".hero_subtitle");
-const manual_button = document.querySelectorAll(".manual_button");
+const first_manual_video_yt_container = document.querySelector('.manual_video_yt_container');
 
 const disableScrolling = () => {
     const x = window.scrollX;
@@ -62,33 +59,4 @@ window.addEventListener('scroll', () => {
     }
 })
 
-function changeLocation() {
-    let new_location = document.querySelector("#selected_div").getAttribute("data-id");
-    window.location.href = new_location;
-}
-
-function changeText(x) {
-    if (x.matches) {
-        hero_subtitle.innerHTML = "Tap on the respective boxes to find steps on how to do \
-        the following. There are written steps, pictures and a video guide!";
-        manual_items.forEach(manual => {
-            manual.addEventListener("click", () => {
-                let selected_div = document.querySelectorAll("#selected_div");
-                selected_div.forEach(div => {
-                    div.removeAttribute("id");
-                })
-                manual.id = "selected_div";
-            });
-            manual.addEventListener("click", changeLocation);
-        })
-    } else {
-        hero_subtitle.innerHTML = 'Tap on the "explore more" button to find steps on how to do \
-        the following. There are written steps, pictures and a video guide!';
-        manual_items.forEach(manual => {
-            manual.removeEventListener("click", changeLocation);
-        })
-    }
-}
-
-changeText(screen_resolution);
-screen_resolution.addListener(changeText);
+first_manual_video_yt_container.style.marginBottom = "50px";
