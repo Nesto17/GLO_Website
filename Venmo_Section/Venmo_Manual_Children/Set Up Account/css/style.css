@@ -45,6 +45,7 @@ section {
     color: var(--black);
     letter-spacing: 1.5px;
     text-align: left;
+    max-width: 800px;
 
     position: relative;
     top: 30px;
