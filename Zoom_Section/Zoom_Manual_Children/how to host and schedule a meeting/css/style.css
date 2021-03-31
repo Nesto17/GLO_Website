@@ -1,0 +1,370 @@
+body {
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--white);
+    overflow-x: hidden;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 580px;
+}
+
+.hero {
+    padding: 0 8%;
+    height: 320px;
+    margin-top: 75px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.hero_title {
+    font-family: 'Calistoga';
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--black);
+    letter-spacing: 1.5px;
+    text-align: left;
+    max-width: 800px;
+
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    transition: opacity 500ms ease-in, top 500ms ease-in-out;   
+}
+
+/* 
+kode tambahan
+*/
+
+.hero_title.appear{
+    opacity: 1;
+    top: 0px;
+}
+
+.hero_subtitle {
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.manual_video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 8%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.manual_video_title{
+    color: var(--black);
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 26px;
+
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    transition: opacity 500ms ease-in, top 500ms ease-in-out;
+    transition-delay: 150ms;
+}
+
+/* 
+kode tambahan
+*/
+
+.manual_video_title.appear{
+    opacity: 1;
+    top: 0px;
+}
+
+.manual_video_text{
+    text-align: left;
+    margin-bottom: 50px;
+    font-size: 14px;
+
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    transition: opacity 500ms ease-in, top 500ms ease-in-out;
+    transition-delay: 180ms;
+}
+
+/* 
+kode tambahan
+*/
+
+.manual_video_text.appear{
+    opacity: 1;
+    top: 0px;
+}
+
+.manual_video hr{
+    background-color: var(--black);
+    width: 100%;
+    height: 3px;
+    margin: 50px 0;
+}
+
+/* 
+kode tambahan
+*/
+
+.line{
+    opacity: 0;
+    transition: opacity 500ms ease-in, transform 700ms ease-in-out;
+    transform: translateX(0) scaleX(0);
+    transform-origin: left;
+    margin: 5px 0 30px 0;
+    transition-delay: 150ms;
+}
+
+#line{
+    margin: 0 0 50px 0;   
+}
+
+.line.appear{
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+}
+
+/* 
+kode tambahan
+*/
+
+.manual_video_yt_container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    opacity: 0;
+    transition: opacity 500ms ease-in, top 500ms ease-in-out;
+    transition-delay: 180ms;
+}
+
+.manual_video_yt_container.appear{
+    opacity: 1;
+}
+
+.manual_video_youtube{
+    margin: 0 0 50px 0;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.manual_tutor{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 0px 8%;
+}
+
+.manual_tutor_title{
+    color: var(--black);
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 26px;
+}
+
+.manual_tutor_text{
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.manual_tutor_type{
+    color: var(--black);
+    margin: 30px 0;
+    text-align:left;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.manual_tutor_steps{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.manual_tutor_steps span{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.manual_tutor_steps mark{
+    background-color: var(--white);
+    color: var(--blue);
+    transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+}
+
+.manual_tutor_steps mark:hover {
+    /* font-weight: bold; */
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.manual_tutor_steps strong{
+    font-weight: bolder;
+}
+
+.manual_tutor_steps_image{
+    width: 100%;
+    max-width: 847px;
+    height: auto;
+    object-fit: contain;
+    margin: 10px 0 40px 0;
+    filter: drop-shadow(0px 0px 10px #00000020);
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid var(--black);
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: var(--black);
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+
+@media only screen and (min-width: 768px) {
+    .hero_title{
+        font-size: 60px
+    }
+
+    .manual_video_title {
+        font-size: 30px;
+    }
+
+    .manual_video_text {
+        font-size: 18px;
+    }
+
+    .manual_tutor_title {
+        font-size: 30px;
+    }
+
+    .manual_tutor_text {
+        font-size: 18px;
+    }
+
+    .manual_tutor_gadget {
+        font-size: 22px;
+    }
+
+    .manual_tutor_steps {
+        font-size: 18px
+    }
+
+    .manual_tutor_steps span{
+        font-size: 26px;
+    }
+}   
+
+@media only screen and (min-width: 1025px) {
+    .hero_title{
+        font-size: 60px
+    }
+
+    .manual_video_title {
+        font-size: 30px;
+    }
+
+    .manual_video_text {
+        font-size: 18px;
+    }
+
+    .manual_tutor_title {
+        font-size: 30px;
+    }
+
+    .manual_tutor_text {
+        font-size: 18px;
+    }
+
+    .manual_tutor_gadget {
+        font-size: 24px;
+    }
+
+    .manual_tutor_steps {
+        max-width: 847px;
+        font-size: 18px
+    }
+
+    .manual_tutor_steps span{
+        font-size: 28px;
+    }
+}
