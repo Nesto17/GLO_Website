@@ -207,11 +207,6 @@ kode tambahan
     font-size: 14px;
 }
 
-.manual_tutor_type {
-    margin: 30px 0 0;
-    font-size: 22px;
-}
-
 .manual_tutor_gadget{
     color: var(--black);
     margin: 30px 0;
@@ -326,10 +321,6 @@ kode tambahan
         font-size: 18px;
     }
 
-    .manual_tutor_type {
-        font-size: 24px;
-    }
-
     .manual_tutor_gadget {
         font-size: 22px;
     }
@@ -363,11 +354,7 @@ kode tambahan
     .manual_tutor_text {
         font-size: 18px;
     }
-
-    .manual_tutor_type {
-        font-size: 26px;
-    }
-
+    
     .manual_tutor_gadget {
         font-size: 24px;
     }

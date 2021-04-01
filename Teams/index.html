@@ -62,9 +62,11 @@
         </header>
         <section class="hero">
             <h2 class="hero_title">Meet the people!</h2>
-            <h4 class="hero_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin
+            <h4 class="hero_subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin
                 lacinia lacus, quis rhoncus tortor mollis sed. Suspendisse ultricies imperdiet
-                erat id ullamcorper. </h4>
+                erat id ullamcorper. 
+            </h4>
         </section>
         <section class="members">
             <button id="prev-btn">
@@ -208,7 +210,26 @@
             </div>
         </footer>
     </div>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     
     <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"
+        integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw=" crossorigin="anonymous"></script>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+
+        history.scrollRestoration = "manual";
+
+        $(window).on('beforeunload', function () {
+            $(window).scrollTop(0);
+            $(body).hide();
+        });
+    </script>
 </body>
 </html>
