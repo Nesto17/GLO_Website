@@ -2,7 +2,7 @@ const hero_title = document.querySelector(".hero_title");
 const line = document.querySelector(".line");
 const manual_video_title = document.querySelector(".manual_video_title");
 const manual_video_text = document.querySelector(".manual_video_text");
-const manual_video_yt_container = document.querySelector(".manual_video_yt_container");
+const manual_video_yt_container = document.querySelectorAll(".manual_video_yt_container");
 const body = document.querySelector("body");
 
 const appearOptions = {
@@ -49,7 +49,9 @@ const appearOnScroll2 = new IntersectionObserver(function (
 window.addEventListener('load', () => {
     appearOnScroll.observe(hero_title);
     appearOnScroll.observe(manual_video_title);
-    appearOnScroll2.observe(manual_video_yt_container);
+    manual_video_yt_container.forEach(youtube => {
+        appearOnScroll.observe(youtube);
+    })
     appearOnScroll.observe(manual_video_text);
     appearOnScroll.observe(line);
     body.style.overflow = "unset";
