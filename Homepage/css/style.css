@@ -44,11 +44,6 @@ section {
 .hero::before {
     position: absolute;
     content: "";
-    background: -moz-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* FF3.6+ */
-    background: -webkit-gradient(25deg, #4857ddff, #3D95CEff, #F72E09ff, #FFE982ff); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(25deg, #4857ddff, #3D95CEff, #F72E09ff, #FFE982ff); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* Opera 11.10+ */
-    background: -ms-linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982); /* IE10+ */
     background: linear-gradient(25deg, #4856DD, #3D95CE, #F72E09, #FFE982);
     width: 650px;
     height: 650px;
@@ -577,7 +572,7 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 40px 50px 0px 45% ;
+        padding: 80px 50px 0px 45% ;
         margin-top: 100px;
     }
     .doordash .preview_logo {
@@ -594,7 +589,7 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 60px 45% 0px 50px ;
+        padding: 90px 45% 0px 50px ;
         margin-top: 90px;
     }
     .uber .preview_logo {
@@ -611,12 +606,12 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 70px 50px 0px 45% ;
+        padding: 100px 50px 0px 45% ;
         margin-top: 60px;
     }
     .venmo .preview_logo {
         left: 10%;
-        bottom: -2%;
+        bottom: -8%;
     }
     .venmo .preview_image {
         left: 4%;
