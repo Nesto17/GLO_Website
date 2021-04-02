@@ -264,8 +264,8 @@ kode tambahan
 }
 
 .manual_tutor_steps_image{
-    width: 70%;
-    max-width: 430px;
+    width: 100%;
+    max-width: 236px;
     height: auto;
     object-fit: contain;
     margin: 10px 0 40px 0;
