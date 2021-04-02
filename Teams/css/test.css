@@ -1,17 +1,16 @@
 @media (min-width: 550px) {
   .hero {
-    row-gap: 20px;
     padding: 100px 60px 0;
     min-height: 450px;
   }
 
   .hero_title {
     font-size: 60px;
+    margin-bottom: 20px;
   }
 
   .hero_subtitle {
     font-size: 14px;
-    font-weight: 500;
     line-height: 25px;
   }
 
