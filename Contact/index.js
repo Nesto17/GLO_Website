@@ -145,6 +145,7 @@ formInputs.forEach((input, index) => {
 let formPromptHiddens = document.querySelectorAll('.form_prompt_hidden');
 let formSections = document.querySelectorAll('.form_section');
 const formSubmit = document.querySelector('.form_submit');
+const form = document.querySelector('.form_box');
 
 const promptError = (element, errorText) => {
     const formNameSection = element.closest('.form_section');
@@ -175,6 +176,12 @@ formSubmit.addEventListener('click', (e) => {
         promptError(formMessages, "please tell us something, we'd love to hear your stories and concerns :D");
     } 
     else {
+        emailjs.sendForm('service_u2yxrse', 'template_srws4yz', form)
+            .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+            console.log('FAILED...', error);
+            });
         window.location.reload();
     }
 
