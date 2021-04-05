@@ -7,6 +7,7 @@ const navBox = document.querySelector('.navigation_box');
 const navDropDown = document.querySelector('.navigation_manuals');
 const navManualsList = document.querySelector('.navigation_manuals_list');
 const wrapper = document.querySelector('.wrapper');
+const body = document.querySelector('body');
 
 const disableScrolling = () => {
   const x = window.scrollX;
@@ -139,5 +140,6 @@ prevBtn.addEventListener('mouseover', stopInterval);
 prevBtn.addEventListener('mouseleave', startSlide);
 
 window.addEventListener("load", () => {
+  body.style.overflow = "unset";
   startSlide();
 })
