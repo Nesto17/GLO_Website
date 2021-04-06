@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
 // const formFileBox = document.querySelector('.form_file_box')
 // const formFileBtn = document.querySelector('.form_file_button');
 // const formFileThumbs = document.querySelector('.form_file_thumbs');
-// // let formFileThumb = document.querySelectorAll('.form_file_thumb');
+// let formFileThumb = document.querySelectorAll('.form_file_thumb');
 
 // formFileBox.addEventListener('dragover', (e) => {
 //     e.preventDefault();
@@ -99,7 +99,7 @@ window.addEventListener('scroll', () => {
 //             formFileThumbs.appendChild(newListElement);
 //         });
 // }
-
+ 
 // formFileBox.addEventListener('click', () => {
 //     formFileInput.click();
 // })
