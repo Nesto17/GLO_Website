@@ -282,6 +282,7 @@ body::-webkit-scrollbar {
   height: 21px;
   overflow: hidden;
   cursor: pointer;
+  margin: 0 10px;
 
   display: grid;
   place-items: center;
