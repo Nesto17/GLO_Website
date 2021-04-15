@@ -55,17 +55,6 @@ section {
     top: -60px;
     left: 50%;
     transform: translateX(-50%);
-
-    /* animation: bgAnimate 30s infinite; */
-}
-
-@keyframes bgAnimate {
-    0% {
-        transform: translateX(-50%) rotate(0deg);
-    }
-    100% {
-        transform: translateX(-50%) rotate(360deg);
-    }
 }
 
 .hero_title {
@@ -177,7 +166,7 @@ section {
 }
 
 .preview_box {
-    width: 80%;
+    width: clamp(300px, 75%, 600px);
     min-height: 400px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px var(--fade_black);
@@ -384,7 +373,6 @@ section {
     }
     .hero_title {
         font-size: 60px;
-        margin-bottom: 20px;
     }
 
     .project {
@@ -406,13 +394,13 @@ section {
     }
 
     .preview_box {
-        min-height: 440px;
-        width: 75%;
+        min-height: 460px;
+        /* width: 75%; */
         padding: 0px 50px;
 
         display: grid;
         justify-items: flex-start;
-        grid-row-gap: 20px;
+        grid-row-gap: 30px;
     }
     .preview_logo {
         width: 65%;
@@ -422,11 +410,11 @@ section {
     }
     .preview_title {
         font-size: 22px;
-        font-weight: 700;
+        font-weight: 600;
         /* margin: 5px 0; */
     }
     .preview_desc {
-        font-size: 12px;
+        font-size: 13px;
         line-height: 24px;
         /* margin: 5px 0;  */
     }
@@ -471,8 +459,14 @@ section {
         left: 50%;
     }
 
+    .hero_title {
+        font-size: 70px;
+    }
+
     .hero_subtitle {
-        margin-bottom: 180px;
+        font-weight: 500;
+        font-size: 16px;
+        margin-bottom: 150px;
         white-space: pre-line;
     }
 
@@ -587,8 +581,8 @@ section {
     }
     .preview_box {
         position: relative;
+        width: clamp(700px, 75%, 900px);
         min-height: unset;
-        width: 75%;
         height: 440px;
         border-radius: 0;
         box-shadow: none;
@@ -608,10 +602,13 @@ section {
     .preview_title {
         font-size: 20px;
         font-weight: 600;
+        width: clamp(200px, 40%, 75ch);
     }
     .preview_desc {
-        font-size: 12px;
+        font-size: 13px;
+        font-weight: 400;
         margin: 30px 0 0;
+        width: clamp(170px, 40%, 75ch);
     }
     .preview_button {
         font-size: 14px;
@@ -629,7 +626,7 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 40px 45% 0px 50px;
+        padding: 50px 40px;
         margin-top: 120px;
         /* filter: drop-shadow(0px 0px 20px #4856DD60); */
     }
@@ -638,7 +635,7 @@ section {
         top: 3%;
     }
     .zoom .preview_image {
-        right: -6%;
+        right: -5%;
         bottom: 32%;
     }
 
@@ -647,15 +644,24 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 80px 50px 0px 45% ;
+        padding: 70px 40px;
         margin-top: 100px;
+
+        /* display: grid; */
+        /* justify-items: flex-end; */
+    }
+    .doordash .preview_title,
+    .doordash .preview_desc,
+    .doordash .preview_button {
+        align-self: flex-end;
+        text-align: right;
     }
     .doordash .preview_logo {
         left: 10%;
         bottom: 15%;
     }
     .doordash .preview_image {
-        left: 4%;
+        left: -2%;
         top: -2%;
     }
 
@@ -664,7 +670,7 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 90px 45% 0px 50px ;
+        padding: 70px 40px;
         margin-top: 90px;
     }
     .uber .preview_logo {
@@ -672,7 +678,7 @@ section {
         top: 20%;
     }
     .uber .preview_image {
-        right: 4%;
+        right: -4%;
         bottom: 25%;
     }
 
@@ -681,26 +687,21 @@ section {
         background-size: 100% 440px;
         background-repeat: no-repeat;
         background-position: center;
-        padding: 100px 50px 0px 45% ;
+        padding: 90px 40px 20px;
         margin-top: 60px;
+    }
+    .venmo .preview_title,
+    .venmo .preview_desc,
+    .venmo .preview_button {
+        align-self: flex-end;
+        text-align: right;
     }
     .venmo .preview_logo {
         left: 10%;
         bottom: -8%;
     }
     .venmo .preview_image {
-        left: 4%;
-        top: 10%;
-    }
-}
-
-@media (min-width: 1140px) {
-    .zoom .preview_box {
-        padding: 60px 45% 0px 50px;
-    }
-
-    .zoom .preview_image {
-        right: 3%;
-        bottom: 32%;
+        left: -4%;
+        top: 15%;
     }
 }
