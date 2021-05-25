@@ -98,7 +98,7 @@ section {
 }
 
 .project_logo {
-    width: 85%;
+    width: clamp(200px, 85%, 600px);
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 25px;
@@ -379,9 +379,6 @@ section {
         padding: 0px 50px;
         min-height: 900px;
     }
-    .project_logo {
-        width: 80%;
-    }
     .project_title {
         font-size: 34px;
     }
@@ -560,7 +557,6 @@ section {
         width: 50%;
     }
     .project_logo {
-        width: 50%;
         order: 2;
     }
     .project_title {
